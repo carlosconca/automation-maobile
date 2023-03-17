@@ -1,0 +1,21 @@
+{
+  "name": "heliosautomation",
+  "version": "1.0.0",
+  "description": "Projeto de testes Helios app",
+  "main": "index.js",
+  "scripts": {
+    "codeceptjs": "codeceptjs run --steps",
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+    "codeceptjs:ui": "coodecept-ui --app",
+    "codeceptjs:demo":"codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs",
+    "codeceptjs:demo:ui":"codeceptjs run --app -c node_modules/@codeceptjs/examples"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.4.1",
+    "webdriverio": "^8.6.2"
+  }
+}
